@@ -3,13 +3,13 @@
 A from-scratch, PyTorch implementation of a **CNN + Bidirectional GRU + CTC** speech-to-text
 model, trained on LibriSpeech. Includes a full training pipeline, greedy CTC decoding,
 WER/CER evaluation, a Gradio web demo for live microphone transcription, and Docker
-deployment — built to be portfolio-ready, not just a notebook experiment.
+deployment. built to be portfolio-ready, not just a notebook experiment.
 
 ## Why this project
 
-Most "speech-to-text" portfolio projects just call the OpenAI Whisper API. This one
+Most speech-to-text portfolio projects just call the OpenAI Whisper API. This one
 implements the actual acoustic model, the CTC loss/decoding logic, the audio feature
-pipeline, and the training loop from first principles — the same architecture family
+pipeline, and the training loop from first principles, the same architecture family
 (DeepSpeech2 / early wav2letter) that predates and underpins modern ASR systems.
 
 ## Architecture
